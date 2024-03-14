@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        askMe();
+
+        function askMe(){
+            var a=prompt("Enter length a: ");
+            var b=prompt("Enter length b: ");
+            var c=prompt("Enter length c: ");
+            determineFunction(a, b, c);
+        }
+
+        function determineFunction(a, b, c)
+        {
+            if (isNaN(a)) 
+        {
+            window.alert("Numbers only!");
+            return;
+        }
+
+        if (isNaN(b)) 
+        {
+            window.alert("Numbers only!");
+            return;
+        }
+
+        if (isNaN(c)) 
+        {
+            window.alert("Numbers only!");
+            return;
+        }
+            if (a===b && b===c) {
+                window.alert("The triangle is an Equilateral!");
+            }
+            else if (a===b || a===c || b===c) {
+                window.alert("The triangle is an Isosceles!");
+
+            }
+            else {
+                window.alert("The triangle is a Scalene!");
+            }
+        }
+        
+    </script>
+</body>
+</html>
